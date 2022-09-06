@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import "scss/mixinExtend";
+
+.navbar{
+    background-color: rgb(123, 123, 123);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    h3{
+        color: blueviolet;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        li{
+            a{
+                @include box-box
+            }
+        }
+    }
+}
+
+main{
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 37%;
+        transform: rotateX(-50%) rotateY(-50%);
+        color: white;
+        text-align: center;
+    }
+
+    h2{
+        @extend h1;
+        top: 60%;
+        left: 23%;
+    }
+
+    section{
+        background-color: bisque;
+        h3{
+            font-size: 30px;
+            text-align: center;
+            margin: 30px;
+            color: blueviolet;
+            background-color: black;
+            padding: 50px;
+        }
+
+        h4{
+            @extend h3;
+        }
+
+        h5{
+            @extend h3;
+        }
+    }
+}

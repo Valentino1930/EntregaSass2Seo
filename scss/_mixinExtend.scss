@@ -1,0 +1,13 @@
+@mixin box-box {
+    background-color: blueviolet;
+    color: white;
+    padding: 4px;
+    border: 2px;
+    text-decoration: none;
+    margin: 0 20px;
+    border-radius: 3px;
+    &:hover{
+        background-color: rgb(63, 21, 102);
+        transition: 2s;
+    }
+}
